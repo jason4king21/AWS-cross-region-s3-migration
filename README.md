@@ -5,7 +5,7 @@ This project demonstrates a serverless data pipeline using **AWS S3**, **SNS**, 
 ---
 
 ## 🧩 Architecture Overview
-![Cross-Region Migration Diagram](architecture.png)
+![Cross-Region Migration Diagram](diagrams/architecture.png)
 
 1. **Source S3 Bucket (us-east-1)**  
    - Accepts uploads of raw files
