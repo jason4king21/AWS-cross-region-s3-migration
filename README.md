@@ -101,7 +101,3 @@ aws-cross-region-s3-migration/
 ```
 
 ---
-
-## 📁 GitHub Project Link
-
-https://github.com/jason4king21/aws-cross-region-s3-migration
