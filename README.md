@@ -51,29 +51,21 @@ This project demonstrates a serverless data pipeline using **AWS S3**, **SNS**, 
 aws-cross-region-s3-migration/
 │
 ├── README.md                         → Project overview, architecture, and setup instructions
-├── architecture.png                  → Visual diagram illustrating the event-driven migration pipeline
+├── diagrams/
+│   └── architecture.png              → Visual diagram illustrating the event-driven migration pipeline
 │
 ├── lambda/
 │   └── migrate_file_lambda.py        → Python script for AWS Lambda that copies S3 files and triggers Glue
 │
-├── glue/
-│   └── glue_crawler_setup.md         → Instructions or scripts to configure a Glue Crawler to scan S3 data
-│
-├── cloudformation/
-│   └── full_stack.yaml               → (Optional) CloudFormation template to automate infrastructure deployment
-│
 ├── sample-data/
-│   └── test_file.csv                 → Sample input file used for testing the data pipeline
-│
-└── docs/
-    └── detailed_workflow.md         → Extended documentation of service interactions and AWS configurations
+│   └── customer.csv                 → Sample input file used for testing the data pipeline
 ```
 
 ---
 
 ## ▶️ How It Works
 
-1. ☁️ Upload a file (e.g., `test_file.csv`) to the **source S3 bucket**  
+1. ☁️ Upload a file (e.g., `customer.csv`) to the **source S3 bucket**  
    (via AWS Console, CLI, or automation)
 
 2. 📣 The file triggers an **SNS topic**, which sends a message to an **SQS queue**.
